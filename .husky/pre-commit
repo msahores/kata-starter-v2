@@ -1,1 +1,3 @@
 npm test -- --run
+npx lint-staged
+npm test -- --run
