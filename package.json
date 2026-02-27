@@ -10,7 +10,8 @@
     "test": "vitest",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "init-kata": "node scripts/init-kata.mjs"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.4.2",
