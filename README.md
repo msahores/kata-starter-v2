@@ -54,6 +54,18 @@ You can also create files manually:
 | `npm run format`    | Format everything with Prettier |
 | `npm run init-kata` | Create a new kata interactively |
 
+## AI-assisted TDD workflow
+
+This template supports a progressive TDD workflow with an AI coding assistant:
+
+1. Run `npm run init-kata` to scaffold the kata files and `KATA.md`
+2. Fill in `KATA.md` with the problem description, rules, examples, and edge cases
+3. Ask your AI assistant to read `KATA.md` and generate all the tests
+4. The AI creates tests using Vitest's `.todo` modifier so they start as pending
+5. Activate one test at a time (remove `.todo`), watch it fail, write the minimum code to make it pass, refactor, and repeat
+
+This gives you a structured red-green-refactor cycle where you control the pace.
+
 ## Stack
 
 - **TypeScript** — Strict typing
